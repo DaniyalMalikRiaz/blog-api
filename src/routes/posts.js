@@ -20,7 +20,6 @@ router.post('/create', AuthMiddleware([
            message: 'Choose from the following categories:', 
            details: allCategories.map(category => category.name)});
         }
-
         const post = new Post({
             title,
             content,
